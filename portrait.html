@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Text Portrait</title>
+        <style>
+            body {
+                background: black;
+                overflow: hidden;
+                font-family: sans-serif;
+            }
+            
+        p { 
+            line-height: 14px; 
+            background: url("img.jpg"); 
+            -webkit-background-clip: text; 
+            background-attachment: fixed; 
+            background-repeat: no-repeat; 
+            -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+            background-size: 80vh; 
+            background-position: center; 
+        }
+        </style>
+        </head>
+        <body> 
+
+    <p id="text"></p> 
+
+  
+
+    <script> 
+
+        let str = "Imissyou "; 
+
+        document.getElementById("text").innerHTML = str.repeat(2100); 
+
+    </script> 
+</body>
+</html>
